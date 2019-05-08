@@ -1,1 +1,37 @@
 Hi i am learning git
+
+1. Install git on system
+2. git init
+3. git status
+Make change in some of your file.
+4.
+    1. add all file
+    git add .
+    2. add specific file
+    git add filename
+5. git commit -m "commit message here. it will describe what changes you made in this commit."
+
+Now we are ready to push our code to master. It may be possible that you have not created the remote repository yet.
+Here there are 2 ways of creating repository:
+    1. from CLI
+    curl -u 'USERNAME' https://api.github.com/user/repos -d '{"name":"repository_name"}'
+    USERNAME: Its the username of your github account.
+    name: its repository name
+    description: Its optional and has description of your repo. It can be passed in key-value pair.
+
+
+
+    2. From using browser. Its simple, just login in your github account and create repo.
+
+The remote repo url will be like: https://github.com/gotosachin/git_tutorial.git
+
+6. Add remote repo to your local branch
+git remote add origin https://github.com/gotosachin/git_tutorial.git
+
+if you already has remote branch you can simply clone it
+git clone git remote add origin https://github.com/gotosachin/git_tutorial.git .
+
+7. git push -u remote master
+Note: It will ask your username and password if these credentials not configured in global config.
+
+
